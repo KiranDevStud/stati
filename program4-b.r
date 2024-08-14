@@ -1,0 +1,8 @@
+year = c(1970:1979)
+snow = c(6.5, 12, 14.9, 10, 10.7, 7.9, 21.9, 12.5, 14.5, 9.2)
+EurasiaSnow = data.frame(year = year, snow = snow)
+plot(formula=snow~year, data=EurasiaSnow, main="Snow vs year")
+hist(x=snow, xlab="snow", main="Snowfall per year")
+snowlog=log(snow)
+plot(formula=snowlog~year, data=EurasiaSnow, main="Snow vsyear(after logarithm transformation)")
+hist(x=snowlog, xlab="snow", main="Snowfall per year(after logarithm transformation)")
